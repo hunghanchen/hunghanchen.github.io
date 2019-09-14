@@ -1,0 +1,209 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  min-height: 550px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #DC5602;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  /* margin-top: 10; */
+}
+li a{
+	list-style-type: none;
+}
+
+ul li{
+	line-height: 1.5em;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  background: #077187;
+  color: #ffcc5c;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color:  #E28413;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 2%;
+}
+.download {
+  /* position: absolute; */
+  /* bottom: -3; */
+  /* right: 0; */
+  padding:25px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  /* display: inline-block; */
+  text-align: left;
+  position: fixed;
+  background-color: inherit;
+  width: 100%;
+  top: 0;
+  color: inherit;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+
+}
+
+nav ol{
+  list-style-type: upper-roman;
+}
+
+nav li {
+  /* display: inline-block; */
+  margin: 0px 10px;
+  float: left;
+  padding: 5px 20px;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+}
+.profolioPhptp {
+	position: absolute;
+	width: 30%;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+  }
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #EDF2F4;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+.jobs {
+	background: #D0CCD0;
+	background-size: cover;
+  }
+
+
+/* Education
+-------------------------*/
+.education {
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)),
+	url(../images/computer.jpg) no-repeat fixed;
+  /* background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/computer.jpg) no-repeat fixed; */
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 25%;
+    float: left;
+  }
+  .col-wide-head {
+	position: absolute;
+    width: 75%;
+    float: right;
+	padding-left: 250px;
+	padding-top:100px;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profolioPhptp {
+    width: 200px;
+  }
+}
+
