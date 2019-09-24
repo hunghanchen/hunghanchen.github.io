@@ -187,8 +187,8 @@ p + h3 {
   }
   .col-wide-head {
 	position: absolute;
-    width: 75%;
-    float: right;
+  width: 75%;
+  float: right;
 	padding-left: 250px;
 	padding-top:100px;
   }
@@ -204,6 +204,9 @@ p + h3 {
   }
   .profolioPhptp {
     width: 200px;
+    position: relative;
+
+
   }
 }
 
